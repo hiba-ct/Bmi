@@ -1,5 +1,9 @@
 /* App.cs */
 
+	body {
+		background-image: url("https://img.freepik.com/free-photo/healthy-bowl-organic-fruit-granola-generated-by-ai_188544-53997.jpg?w=1380&t=st=1721374416~exp=1721375016~hmac=2e051abc999037dcb42975fa515c36114ad92dc79f094a349988194abf0374c3");
+	  }
+
 
 
 .container { 
@@ -30,17 +34,7 @@ input[type='number'] {
 	font-size: 16px; 
 } 
 
-.calculate-btn { 
-	display: block; 
-	width: 100%; 
-	padding: 10px; 
-	background-color: #007bff; 
-	color: #fff; 
-	font-size: 16px; 
-	border: none; 
-	border-radius: 4px; 
-	cursor: pointer; 
-} 
+
 
 .result { 
 	margin-top: 20px; 
@@ -59,7 +53,7 @@ input[type='number'] {
 }
 
 .color{
-  color:rgba(232, 144, 144, 0.795);
+  color:rgba(215, 29, 29, 0.795);
   margin-left: 50px;
   margin-top: 10px;
   font-size: 12px;

@@ -37,9 +37,14 @@ function BmiCalculator() {
   
 
 	return ( 
+		
+		<div style={{height:'100vh'}} className='d-flex justify-content-center align-items-center'>
+		<div style={{backgroundColor:'pink',width:'500px'}} className='p-3 rounded'>
+	
 		<div className="container"> 
+		
 			<h1> BMI Calculator</h1> 
-			<div className="input-container"> 
+			<div className="input-container">
 				<label htmlFor="height">Enter Your Height (cm):</label> 
 				<input 
 					type="number"
@@ -49,7 +54,7 @@ function BmiCalculator() {
 				/> 
 			</div> 
 			<div className="input-container"> 
-				<label htmlFor="weight">Enter Your Weight (kg):</label> 
+				<label htmlFor="weight" >Enter Your Weight (kg):</label> 
 				<input 
 					type="number"
 					id="weight"
@@ -57,11 +62,11 @@ function BmiCalculator() {
 					onChange={(e) => setWeightValue(e.target.value)} 
 				/> 
 			</div> 
-			<button className="calculate-btn" onClick={calculateBmi}> 
+			<button className="mt-3 bg-primary w-100 " onClick={calculateBmi}> 
 				Click to Calculate BMI 
 			</button> 
 			{bmiValue && bmiMessage && ( 
-				<div className="result"> 
+				<div className="result"class="text-danger bg-black mt-3"> 
 					<p> 
 						Your BMI: <span className="bmi-value">{bmiValue}</span> 
 					</p> 
@@ -69,8 +74,9 @@ function BmiCalculator() {
 						Result: <span className="bmi-message">{bmiMessage}</span> 
 					</p> 
 
+</div>
 
-				</div> 
+				
 
         
 			)} 
@@ -85,6 +91,9 @@ function BmiCalculator() {
 </div>
     
     </div> 
+
+</div>
+</div>
 
 
 
